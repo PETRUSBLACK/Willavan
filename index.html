@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipy - Food Recipes</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="top-bar">
+        <div class="promo-banner">
+          <div class="promo-item">
+            <span class="gift-icon">🎁</span>
+            <span>Shop the Gift Edit</span>
+          </div>
+          <div class="promo-item">
+            <span class="cookie-icon">🍪</span>
+            <span>Tap for Holiday Cookies</span>
+          </div>
+          <div class="promo-item">
+            <span class="hosting-icon">🍽️</span>
+            <span>Our Best Hosting Hacks</span>
+          </div>
+        </div>
+        <div class="main-nav">
+          <div class="logo">RECIPY</div>
+          <button class="sidebarButton">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <div id="nav_menu">
+            <div class="nav-links">
+              <div class="dropdown">
+                <a href="#bundles">Recipes</a>
+              </div>
+              <a href="#bundles">Bundles</a>
+              <a href="#blog">Blog</a>
+            </div>
+            <div class="nav-actions" id="mobileActions">
+              <div class="search-bar">
+                <input type="text" placeholder="Search" />
+                <button class="search-icon">🔍</button>
+              </div>
+              <button class="cart-btn">🛒</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Recipes</h1>
+      </section>
+
+      <section class="filters">
+        <div class="filter-tags">
+          <button class="filter-btn active">Uncooked Vegetarian food</button>
+          <button class="filter-btn">Light Cuisine</button>
+          <button class="filter-btn">High Proteins</button>
+          <button class="filter-btn">Vegetarian</button>
+          <button class="filter-btn">Fish</button>
+          <button class="filter-btn">Vegan</button>
+        </div>
+        <div class="filter-actions">
+          <div class="sort-dropdown">
+            <select>
+              <option>Popular</option>
+              <option>By date</option>
+              <option>Price</option>
+            </select>
+          </div>
+          <button class="more-filter-btn">More Filter</button>
+        </div>
+      </section>
+
+      <!----- Recipe grid ----->
+
+      <section class="recipe-grid">
+        <div class="recipe-card">
+          <img
+            src="./assets/jimmy-dean-IanqI4W4fco-unsplash_8_11zon.webp"
+            alt="Winter tarte flambée"
+          />
+          <div class="recipe-content">
+            <h3>Pizza with Jimmy Dean</h3>
+            <div class="author">
+              <div class="author-info">
+                <p class="author-name">Michaela Titz</p>
+                <p class="author-title">Cookbook Author, Little</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <img
+            src="./assets/cake-1227842_1280_3_11zon.webp"
+            alt="Winter rice pudding"
+          />
+          <div class="recipe-content">
+            <h3>Creamy Cake</h3>
+            <div class="author">
+              <div class="author-info">
+                <p class="author-name">Anna Mahlodji</p>
+                <p class="author-title">Food Couch</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <img
+            src="./assets/ai-generated-8983948_1280_1_11zon.webp"
+            alt="Cauliflower & carrot soup"
+          />
+          <div class="recipe-content">
+            <h3>Shawama x Hotdog</h3>
+            <div class="author">
+              <div class="author-info">
+                <p class="author-name">Jane Cooper</p>
+                <p class="author-title">Cookbook Author, Little</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <img
+            src="./assets/ai-generated-9063510_1280_2_11zon.webp"
+            alt="Barbary duck breast"
+          />
+          <div class="recipe-content">
+            <h3>Griled Chicken</h3>
+            <div class="author">
+              <div class="author-info">
+                <p class="author-name">Wade Warren</p>
+                <p class="author-title">Cookbook Author, Little</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="new_recipe-card" class="recipe-card">
+          <img
+            src="./assets/delicious-epic-food-presentation (1)_5_11zon.webp"
+            alt="Barbary duck breast"
+          />
+          <div class="recipe-content">
+            <h3>Hamburger</h3>
+            <div class="author">
+              <div class="author-info">
+                <p class="author-name">Chef Dan</p>
+                <p class="author-title">borook Author</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="new_recipe-card" class="recipe-card">
+          <img
+            src="./assets/chad-montano-eeqbbemH9-c-unsplash_4_11zon.webp"
+            alt="Barbary duck breast"
+          />
+          <div class="recipe-content">
+            <h3>Pan-Cake x honey</h3>
+            <div class="author">
+              <div class="author-info">
+                <p class="author-name">Marthins</p>
+                <p class="author-title">Food Master</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="new_recipe-card" class="recipe-card">
+          <img
+            src="./assets/front-view-meat-sauce-soup-with-greens-potatoes-dark-desk-soup-meal-sauce-meat_7_11zon.webp"
+            alt="Barbary duck breast"
+          />
+          <div class="recipe-content">
+            <h3>Yam Porridge</h3>
+            <div class="author">
+              <div class="author-info">
+                <p class="author-name">Sam kim</p>
+                <p class="author-title">Cultural school, chef</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="new_recipe-card" class="recipe-card">
+          <img
+            src="./assets/delicious-epic-food-presentation_stake_6_11zon.webp"
+            alt="Barbary duck breast"
+          />
+          <div class="recipe-content">
+            <h3>Stake x Egg</h3>
+            <div class="author">
+              <div class="author-info">
+                <p class="author-name">Sammy Joe</p>
+                <p class="author-title">United state chef</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <button class="pagination-btn">Previous</button>
+      <div class="page-numbers">
+        <span class="page-number active">1</span>
+        <span class="page-number">2</span>
+        <span class="page-number">3</span>
+        <span class="page-number">...</span>
+        <span class="page-number">10</span>
+      </div>
+      <button class="pagination-btn">Next</button>
+    </div>
+
+    <!---- Footer ---->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">RECIPY</div>
+          <p class="footer-description">
+            We also know how difficult it is to find recipe ideas for every day
+            and to buy the right ingredients in the hustle and bustle of
+            everyday life
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                alt="LinkedIn"
+              />
+            </a>
+            <a href="#" class="social-link">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                alt="Facebook"
+              />
+            </a>
+            <a href="#" class="social-link">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+                alt="Twitter"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>Enterprise</h3>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Imprint</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Learn</h3>
+            <ul>
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Become a Creator</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Info and Guides</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Subscribe</h3>
+            <div class="subscribe-form">
+              <input type="email" placeholder="Email address" />
+              <button type="submit">→</button>
+            </div>
+            <p class="subscribe-text">
+              We love good food and are convinced that cooking with fresh
+              ingredients is not only good for the body, but also for the soul.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© Recipy 2023</p>
+        <div class="footer-bottom-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Cookies</a>
+          <a href="#">Site map</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
